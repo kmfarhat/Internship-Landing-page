@@ -1,0 +1,66 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <h2>Farhat KM</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Farhat KM, a passionate frontend developer with a strong foundation in Java, Python, and UI/UX design. I love building clean, responsive, and user-friendly web applications. Currently, I'm pursuing my B.Tech in IT and gaining hands-on experience through a web development internship.
+            I enjoy designing interactive UIs, solving problems, and learning new technologies to improve user experiences. My goal is to create intuitive and impactful digital solutions!</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p> Brain Tumor Detection Software
+Technologies Used: C#, Machine Learning, Image Processing Developed a software application for brain tumor detection using advanced image processing and machine learning techniques. The system analyzes MRI scans to identify and classify potential tumor regions, assisting in early diagnosis. Key features include image segmentation, feature extraction, and AI-based classification for enhanced accuracy. The project aims to support medical professionals by providing a reliable and efficient tool for tumor analysis..</p>
+            <button onclick="showMore('project1')">Show More</button>
+            <div id="project1" class="more-info" style="display: none;">
+                <p>More details about project 1.</p>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>College Website Clone
+              I created a clone of my college's official website using HTML, CSS, and JavaScript. This project helped me replicate the design, layout, and structure of the original website while incorporating interactive features like navigation menus, event sections, and information pages. It gave me practical experience in front-end web development and the ability to adapt real-world designs into a functional website..</p>
+            <button onclick="showMore('project2')">Show More</button>
+            <div id="project2" class="more-info" style="display: none;">
+                <p>More details about project 2.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your name " required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>"
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
